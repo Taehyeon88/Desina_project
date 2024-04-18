@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;   //Ui관련 라이브러리
-using UnityEngine.SceneManagement;  // 낀 관리 관련 라이브러리
+using UnityEngine.SceneManagement;  // 씬 관리 관련 라이브러리
 
 public class GameManeger : MonoBehaviour
 {
@@ -24,19 +24,19 @@ public class GameManeger : MonoBehaviour
     {
         if(!is_gameover)
         {
-            survive_time += Time.deltaTime;
+            survive_time += Time.deltaTime;    //Time.delaTime 은 float타입임.
             time_text.text = "Time" + (int)survive_time;
         }
         else
         {
             if (Input.GetKeyDown(KeyCode.R))
             {
-                SceneManager.LoadScene("Dodge_scene");
+                SceneManager.LoadScene("Dodge_scene"); //이거 전부 다 어떤 의미??
             }
         }
     }
 
-    public void EndGame()
+    public void EndGame() //void이것은 무엇?
     {
         is_gameover = true;
 
