@@ -12,7 +12,7 @@ public class Player_controller : MonoBehaviour
     {
         
     }
-    // Start is called before the first frame update
+    
     void Start()
     {
         //게임 오브젝트에서 Rigidbody 컴포넌트를 찾아 player_rigidbody에 할당

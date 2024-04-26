@@ -25,7 +25,7 @@ public class GameManeger : MonoBehaviour
         if(!is_gameover)
         {
             survive_time += Time.deltaTime;    //Time.delaTime 은 float타입임.
-            time_text.text = "Time" + (int)survive_time;
+            time_text.text = "Time: " + (int)survive_time;
         }
         else
         {
